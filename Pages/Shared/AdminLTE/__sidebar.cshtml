@@ -104,7 +104,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item @(ViewData["Module"]?.ToString() == "Purchase" ? "menu-open" : "")">
+                @* <li class="nav-item @(ViewData["Module"]?.ToString() == "Purchase" ? "menu-open" : "")">
                     <a href="#" class="nav-link @(ViewData["Module"]?.ToString() == "Purchase" ? "active" : "")">
                         <i class="nav-icon fas fa-truck"></i>
                         <p>
@@ -150,7 +150,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> *@
                 <li class="nav-item @(ViewData["Module"]?.ToString() == "Inventory" ? "menu-open" : "")">
                     <a href="#" class="nav-link @(ViewData["Module"]?.ToString() == "Inventory" ? "active" : "")">
                         <i class="nav-icon fas fa-cubes"></i>
@@ -160,12 +160,12 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <li class="nav-item">
+                        @* <li class="nav-item">
                             <a asp-page="/UnitMeasures/UnitMeasureList" class="nav-link @(currentPageFolderName.Equals("UnitMeasures") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Unit Measures</p>
                             </a>
-                        </li>
+                        </li> *@
                         <li class="nav-item">
                             <a asp-page="/ProductGroups/ProductGroupList" class="nav-link @(currentPageFolderName.Equals("ProductGroups") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
@@ -178,25 +178,25 @@
                                 <p>Products</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+    @*                     <li class="nav-item">
                             <a asp-page="/Warehouses/WarehouseList" class="nav-link @(currentPageFolderName.Equals("Warehouses") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Warehouses</p>
                             </a>
-                        </li>
-                        <li class="nav-item">
+                        </li> *@
+                  @*       <li class="nav-item">
                             <a asp-page="/DeliveryOrders/DeliveryOrderList" class="nav-link @(currentPageFolderName.Equals("DeliveryOrders") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Delivery Orders</p>
                             </a>
-                        </li>
+                        </li> *@
                         <li class="nav-item">
                             <a asp-page="/SalesReturns/SalesReturnList" class="nav-link @(currentPageFolderName.Equals("SalesReturns") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Sales Returns</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+@*                         <li class="nav-item">
                             <a asp-page="/GoodsReceives/GoodsReceiveList" class="nav-link @(currentPageFolderName.Equals("GoodsReceives") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Goods Receives</p>
@@ -207,8 +207,8 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Purchase Returns</p>
                             </a>
-                        </li>
-                        <li class="nav-item">
+                        </li> *@
+                        @* <li class="nav-item">
                             <a asp-page="/TransferOuts/TransferOutList" class="nav-link @(currentPageFolderName.Equals("TransferOuts") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Transfer Outs</p>
@@ -237,13 +237,13 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Scrappings</p>
                             </a>
-                        </li>
-                        <li class="nav-item">
+                        </li> *@
+               @*          <li class="nav-item">
                             <a asp-page="/StockCounts/StockCountList" class="nav-link @(currentPageFolderName.Equals("StockCounts") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Stock Counts</p>
                             </a>
-                        </li>
+                        </li> *@
                         <li class="nav-item">
                             <a asp-page="/InventoryTransactions/InventoryTransactionList" class="nav-link @(currentPageFolderName.Equals("InventoryTransactions") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
@@ -279,12 +279,12 @@
                                 <p>Company</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+ @*                        <li class="nav-item">
                             <a asp-page="/Taxes/TaxList" class="nav-link @(currentPageFolderName.Equals("Taxes") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Tax</p>
                             </a>
-                        </li>
+                        </li> *@
                         <li class="nav-item">
                             <a asp-page="/UserProfiles/UserList" class="nav-link @(currentPageFolderName.Equals("UserProfiles") ? "active" : "")">
                                 <i class="far fa-circle nav-icon"></i>
