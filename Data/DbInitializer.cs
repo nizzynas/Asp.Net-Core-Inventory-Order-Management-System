@@ -47,7 +47,8 @@ namespace Indotalent.Data
             await DefaultUser.GenerateAsync(userManager, appConfig, fileImageService, companyService);
 
             await DefaultSystemWarehouse.GenerateAsync(services);
-
+            
+            // demo setup
             if (appConfig.Value.IsDemoVersion)
             {
                 await DemoCustomerGroup.GenerateAsync(services);

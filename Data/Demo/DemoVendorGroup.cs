@@ -9,11 +9,11 @@ namespace Indotalent.Data.Demo
         {
             var service = services.GetRequiredService<VendorGroupService>();
 
-            await service.AddAsync(new VendorGroup { Name = "Manufacture" });
-            await service.AddAsync(new VendorGroup { Name = "Supplier" });
-            await service.AddAsync(new VendorGroup { Name = "Service Provider" });
+           // await service.AddAsync(new VendorGroup { Name = "Manufacture" });
+           // await service.AddAsync(new VendorGroup { Name = "Supplier" });
+           // await service.AddAsync(new VendorGroup { Name = "Service Provider" });
             await service.AddAsync(new VendorGroup { Name = "Distributor" });
-            await service.AddAsync(new VendorGroup { Name = "Freelancer" });
+           // await service.AddAsync(new VendorGroup { Name = "Freelancer" });
         }
     }
 }
