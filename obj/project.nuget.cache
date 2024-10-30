@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HLOVLi/qj2VbWNqrMg/w7Y1CPsvloVMDT1XxTxocfz3AeKvJKOiIY17UWStekY4H6emfc9ZIWZVPD966Q7xPQA==",
+  "dgSpecHash": "k2PEFLZZNAtx0MW58/xxtTOj70wx2vfAMOKZndOiGbA724cSM9+3CC69AW9NdgGv/ZjuMUsPe8MTpcwFBfvlGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\znin\\source\\repos\\Asp.Net-Core-Inventory-Order-Management-System\\Indotalent.csproj",
+  "projectFilePath": "C:\\Users\\znin\\source\\repos\\Asp.Net-Core-Inventory-Order-Management-System\\JACSTOCK2\\Indotalent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\znin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\znin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

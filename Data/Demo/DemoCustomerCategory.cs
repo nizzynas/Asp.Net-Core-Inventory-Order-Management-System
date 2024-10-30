@@ -9,11 +9,11 @@ namespace Indotalent.Data.Demo
         {
             var service = services.GetRequiredService<CustomerCategoryService>();
 
-            await service.AddAsync(new CustomerCategory { Name = "Enterprise" });
-            await service.AddAsync(new CustomerCategory { Name = "Medium" });
-            await service.AddAsync(new CustomerCategory { Name = "Small" });
-            await service.AddAsync(new CustomerCategory { Name = "Startup" });
-            await service.AddAsync(new CustomerCategory { Name = "Micro" });
+            await service.AddAsync(new CustomerCategory { Name = "JAC" });
+            //await service.AddAsync(new CustomerCategory { Name = "Medium" });
+            //await service.AddAsync(new CustomerCategory { Name = "Small" });
+            //await service.AddAsync(new CustomerCategory { Name = "Startup" });
+            //await service.AddAsync(new CustomerCategory { Name = "Micro" });
         }
     }
 }

@@ -17,13 +17,13 @@ namespace Indotalent.Data.Demo
 
             var groups = customerGroupService.GetAll().Select(x => x.Id).ToArray();
             var categories = customerCategoryService.GetAll().Select(x => x.Id).ToArray();
-            var cities = new string[] { "New York", "Los Angeles", "San Francisco", "Chicago" };
+            var cities = new string[] { "Sainte-Anne-de-Bellevue" };
 
             Random random = new Random();
 
             await customerService.AddAsync(new Customer
             {
-                Name = "Citadel LLC",
+                Name = "Vlad",
                 Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
                 CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
                 CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
@@ -31,7 +31,7 @@ namespace Indotalent.Data.Demo
             });
             await customerService.AddAsync(new Customer
             {
-                Name = "Ironclad LLC",
+                Name = "David",
                 Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
                 CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
                 CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
@@ -39,148 +39,148 @@ namespace Indotalent.Data.Demo
             });
             await customerService.AddAsync(new Customer
             {
-                Name = "Armada LLC",
+                Name = "Muhammad",
                 Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
                 CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
                 CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
                 City = DbInitializer.GetRandomString(cities, random)
             });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Shield LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Alpha LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Capitol LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Federal LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Statewide LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Harmony LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Hope LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Unity LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Prosperity LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Global LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Sunset LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Luxe LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Serenity LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Oasis LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Grandeur LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Bright LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
-            await customerService.AddAsync(new Customer
-            {
-                Name = "Stellar LLC",
-                Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
-                CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
-                CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
-                City = DbInitializer.GetRandomString(cities, random)
-            });
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Shield LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Alpha LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Capitol LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Federal LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Statewide LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Harmony LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Hope LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Unity LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Prosperity LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Global LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Sunset LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Luxe LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Serenity LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Oasis LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Grandeur LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Bright LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
+            //await customerService.AddAsync(new Customer
+            //{
+            //    Name = "Stellar LLC",
+            //    Number = numberSequenceService.GenerateNumber(nameof(Customer), "", "CST"),
+            //    CustomerGroupId = DbInitializer.GetRandomValue(groups, random),
+            //    CustomerCategoryId = DbInitializer.GetRandomValue(categories, random),
+            //    City = DbInitializer.GetRandomString(cities, random)
+            //});
         }
     }
 }
